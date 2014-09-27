@@ -56,18 +56,24 @@ int main(int argc, char **argv)
 				}while(r != 'S' && r != 'D');
 				
 				do{
-					cout<<"Em que andar voce esta? ";
+					cout<<"\nEm que andar voce esta? ";
 					cin>>andaratual;
 					if (andaratual < 1 || andaratual > e.getNAndares()){
-						cout<<"Opcao invalida!!";
+						cout<<"Opcao invalida!!\n";
 						getch();
 					}
 				}while(andaratual < 1 || andaratual > e.getNAndares());
 				
 				e.setAndar(andaratual);
 				
-				cout<<"\nPara que andar voce deseja ir? ";
-				cin>>andar;
+				do{
+					cout<<"\nPara que andar voce deseja ir? ";
+					cin>>andar;
+					if (andar < 1 || andar > e.getNAndares()){
+						cout<<"Opcao invalida!!\n";
+						getch();
+					}
+				}while(andar < 1 || andar > e.getNAndares());
 				cout<<"\nDigite o valor total do peso ocupado pelos passageiros do elevador: ";
 				cin>>peso;
 				if( e.verificaAndar(e.getAndar(),andar,e.getSubir(),e.getDescer()) == -1){
@@ -85,7 +91,7 @@ int main(int argc, char **argv)
 			e.chamar(&s,&d,&andaratual,&peso);
 			
 			if (e.getAlarme() == 1){
-				cout<<"\nO elevador nao pode se movimentar pois o peso dentro dele ultrapassa o peso limite";
+				cout<<"\nO elevador nao pode se movimentar pois o peso dentro dele ultrapassa o peso limite!";
 				cout<<"\nRetire algumas pessoas do elevador e entre novamente com o peso total: ";
 				cin>>peso;
 					if (peso > pesomax){
