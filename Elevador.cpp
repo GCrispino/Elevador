@@ -67,7 +67,7 @@ void Elevador::chamar(int *subir, int *descer,int *andar,float *peso){
 	
 }
 
-const void Elevador::info(){
+void Elevador::info() const{
 	cout<<"-- Informacoes do elevador:\n";
 	cout<<"\nModelo: "<<modelo<<".";
 	cout<<"\nPeso maximo suportado pelo elevador: "<<pesomax<<" kgs.";
@@ -78,7 +78,7 @@ void Elevador::emergencia(){
 	alarme = 1;
 }
 
-const int Elevador::verificaAndar(int andaratual, int andar,int subir, int descer){
+int Elevador::verificaAndar(int andaratual, int andar,int subir, int descer)const{
 	if (subir == 1 && descer == 0) //elevador sobe
 		if (andaratual >= andar)
 			return -1; //Erro

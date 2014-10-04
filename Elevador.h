@@ -21,11 +21,10 @@ public:
 	void setPeso(float peso);
 	string getModelo();
 	
-	//inline void chamar(int *subir, int *descer,int *andar,float *peso); //funcao inline que esta dando erro.
 	void chamar(int *subir, int *descer,int *andar,float *peso);//passagem por referencia feita para "economizar" memória
-	void emergencia();												   //a cada vez que este método for chamado.
-	const void info();
-	const int verificaAndar(int andaratual, int andar,int subir,int descer); //Verifica se a escolha dos andares foi feita
+	inline void emergencia();												   //a cada vez que este método for chamado.
+	void info() const;
+	int verificaAndar(int andaratual, int andar,int subir,int descer) const; //Verifica se a escolha dos andares foi feita
 																	//corretamente, de acordo com a subida/descida do elevador.
 private:
 	int andar;    //Indica o andar atual do elevador quando ele pára.

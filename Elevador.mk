@@ -5,7 +5,7 @@
 ## Debug
 ProjectName            :=Elevador
 ConfigurationName      :=Debug
-WorkspacePath          := "C:\Users\Crispino\Google Drive\CBCC\Documentos\4o semestre\Grafos\Trabalhos\Atividade 3 - Algoritmos de Prim, Kruskal e Boruvka\Atividade 3_ grafos\Atividade_3_Grafos\ProgII"
+WorkspacePath          := "C:\Users\Crispino\Documents\ProgII\Elevador"
 ProjectPath            := "C:\Users\Crispino\Documents\ProgII\Elevador"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Crispino
-Date                   :=09/25/14
+Date                   :=10/03/14
 CodeLitePath           :="C:\Program Files (x86)\CodeLite"
 LinkerName             :=C:/MinGW-4.8.1/bin/g++.exe 
 SharedObjectLinkerName :=C:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
@@ -116,6 +116,6 @@ clean:
 	$(RM) ./Debug/*$(DependSuffix)
 	$(RM) $(OutputFile)
 	$(RM) $(OutputFile).exe
-	$(RM) "../../../Google Drive/CBCC/Documentos/4o semestre/Grafos/Trabalhos/Atividade 3 - Algoritmos de Prim, Kruskal e Boruvka/Atividade 3_ grafos/Atividade_3_Grafos/ProgII/.build-debug/Elevador"
+	$(RM) ".build-debug/Elevador"
 
 
