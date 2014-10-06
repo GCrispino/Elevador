@@ -1,14 +1,7 @@
 #include "Elevador.h"
 
-Elevador::Elevador()
-{
-	andar = 0;
-	nandares = 0;
-	subir = 0;
-	descer = 0;
-	pesomax = 0;
-	modelo = "";
-	alarme = 0;
+Elevador::Elevador(int andar,int nandares,int subir,int descer,float pesomax,int alarme)
+:andar(andar),nandares(nandares),subir(subir),descer(descer),pesomax(pesomax),alarme(alarme){
 }
 
 Elevador::Elevador(int andar,int nandares, int subir, int descer, float pesomax, string modelo, int alarme){

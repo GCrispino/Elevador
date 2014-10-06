@@ -7,7 +7,7 @@ using namespace std;
 class Elevador
 {
 public:
-	Elevador();
+	Elevador(int andar = 0,int nandares = 0,int subir = 0,int descer = 0,float pesomax = 0,int alarme = 0);
 	Elevador(int andar,int nandares, int subir, int descer, float pesomax, string modelo, int alarme);
 	
 	void setSubir(int subir);
